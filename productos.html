@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Digital Solutions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Goggles a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="css/tablaCelulares.css">
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/login_overlay.css" rel='stylesheet' type='text/css' />
+	<link href="css/style6.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="css/shop.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/checkout.css">
+	<link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+	<link
+		href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+	<link rel="stylesheet" href="css/formAgregarCel.css">
+</head>
+
+<body>
+	<div class="banner-top container-fluid" id="home">
+		<!-- header -->
+		<header>
+			<div class="row">
+				<div class="col-md-3 top-info text-left mt-lg-4">
+
+					<ul>
+						<li>
+							<a class="btn btn-outline-dark" href="usuarios.html" role="button">
+								Usuarios
+								<span class="fa fa fa-th-list" aria-hidden="true"></span>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="col-md-6 logo-w3layouts text-center">
+					<h1 class="logo-w3layouts">
+						<a class="navbar-brand" href="index.html">
+							Smartphones</a>
+					</h1>
+				</div>
+
+				<div class="col-md-3 top-info-cart text-right mt-lg-4">
+					<ul class="cart-inner-info">
+						<li class="button-log">
+							<a id="user" class="btn-open" href="#">
+								<span class="fa fa-user" aria-hidden="true"></span>
+								Iniciar sesión
+							</a>
+						</li>
+						<li class="galssescart galssescart2 cart cart box_1">
+							<a href="carritoCompra.html">
+								<button class="top_googles_cart" type="submit" name="submit" value="">
+									Mi Carrito
+									<i class="fas fa-cart-arrow-down"></i>
+								</button>
+							</a>
+						</li>
+					</ul>
+					<!---->
+					<div class="overlay-login text-left">
+						<button type="button" class="overlay-close1">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</button>
+						<div class="wrap">
+							<h5 class="text-center mb-4">Login</h5>
+							<div class="login p-5 bg-dark mx-auto mw-100">
+								<form action="#" method="post">
+									<div class="form-group">
+										<label class="mb-2 ">Correo Electrónico</label>
+										<input type="email" class="form-control" id="exampleInputEmail1"
+											aria-describedby="emailHelp" placeholder="" required="">
+										<small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo
+											electrónico con nadie más.</small>
+									</div>
+									<div class="form-group">
+										<label class="mb-2">Contraseña</label>
+										<input type="password" class="form-control" id="exampleInputPassword1"
+											placeholder="" required="">
+									</div>
+									<label class="mb-2 ">Correo Electrónico</label>
+									<div class="form-check mb-2">
+										<input type="radio" name="1" class="form-check-input" id="exampleCheck1"
+											onclick="clic()" required>
+										<label class="form-check-label" for="exampleCheck1">Check me out</label>
+									</div>
+									<div class="form-check mb-2">
+										<input type="radio" name="1" class="form-check-input" id="exampleCheck1"
+											onclick="clic()" required>
+										<label class="form-check-label" for="exampleCheck1">Check me out</label>
+									</div>
+									<button type="submit" class="btn btn-primary submit mb-4">Iniciar Sesión</button>
+
+								</form>
+							</div>
+							<!---->
+						</div>
+					</div>
+					<!---->
+				</div>
+			</div>
+			<div class="search">
+				<div class="mobile-nav-button">
+					<button id="trigger-overlay" type="button">
+						<i class="fas fa-search"></i>
+					</button>
+				</div>
+				<!-- open/close -->
+				<div class="overlay overlay-door">
+					<button type="button" class="overlay-close">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</button>
+					<form action="#" method="post" class="d-flex">
+						<input class="form-control" type="search" placeholder="Search here..." required="">
+						<button type="submit" class="btn btn-primary submit">
+							<i class="fas fa-search"></i>
+						</button>
+					</form>
+
+				</div>
+				<!-- open/close -->
+			</div>
+			<label class="top-log mx-auto"></label>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light top-header mb-2">
+
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav nav-mega mx-auto">
+						<li class="nav-item">
+							<a class="nav-link ml-lg-0" href="index.html">Inicio
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<!--<a class="nav-link" href="nosotros.html">Registrarse</a>-->
+
+							<a class="nav-link" href="./Pages/index-registrar.html">Registrarse</a>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="tienda.html" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="fa fa-plus-circle" aria-hidden="true"></span>
+								Ofertas
+							</a>
+							<ul class="dropdown-menu mega-menu ">
+								<li>
+									<div class="row">
+										<div class="col-md-4 media-list span4 text-left">
+											<h5 class="tittle-w3layouts-sub"> Ofertas en Celulares </h5>
+											<ul>
+												<li class="media-mini mt-3">
+													<a href="tienda.html">Recomendaciones para ti</a>
+												</li>
+												<li class="">
+													<a href="tienda.html"> iPhone</a>
+												</li>
+												<li>
+													<a href="tienda.html">La mejor marca para ti</a>
+												</li>
+
+											</ul>
+										</div>
+										<div class="col-md-4 media-list span4 text-left">
+											<h5 class="tittle-w3layouts-sub"> Celulares Especiales </h5>
+											<div class="media-mini mt-3">
+												<a href="tienda.html">
+													<img src="images/g2.jpg" class="img-fluid" alt="">
+												</a>
+											</div>
+										</div>
+										<div class="col-md-4 media-list span4 text-left">
+											<h5 class="tittle-w3layouts-sub">¿Cómo conseguir el smartphone ideal?</h5>
+											<div class="media-mini mt-3">
+												<a href="tienda.html">
+													<img src="images/g3.jpg" class="img-fluid" alt="">
+												</a>
+											</div>
+
+										</div>
+									</div>
+									<hr>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Tienda
+							</a>
+							<ul class="dropdown-menu mega-menu ">
+								<li>
+									<div class="row">
+										<div class="col-md-4 media-list span4 text-left">
+											<h5 class="tittle-w3layouts-sub"> Especificaciones </h5>
+											<ul>
+												<li class="media-mini mt-3">
+													<a href="tienda.html">Procesador</a>
+												</li>
+												<li class="">
+													<a href="tienda.html"> Pantalla</a>
+												</li>
+												<li>
+													<a href="tienda.html">Cámara - Audio - Vídeo</a>
+												</li>
+												<li>
+													<a href="tienda.html">Memoria - Audio - Vídeos</a>
+												</li>
+												<li>
+													<a href="tienda.html">Redes/Bandas</a>
+												</li>
+												<li>
+													<a href="tienda.html">Conectividad</a>
+												</li>
+												<li>
+													<a href="tienda.html">Sistema Operativo</a>
+												</li>
+												<li>
+													<a href="tienda.html">Sensores - Bateria</a>
+												</li>
+												<li>
+													<a href="tienda.html">Servicios y Aplicaciones</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-md-4 media-list span4 text-left">
+											<h5 class="tittle-w3layouts-sub"> Los mejores celulares gama alta </h5>
+											<ul>
+												<li class="media-mini mt-3">
+
+													<a href="tienda.html">Samsung Galaxy S22</a>
+												</li>
+												<li>
+													<a href="tienda.html">Serie iPhone 13</a>
+												</li>
+												<li>
+													<a href="tienda.html">Xiaomi 12 Pro</a>
+												</li>
+												<li>
+													<a href="tienda.html">Serie iPhone 12</a>
+												</li>
+												<li>
+													<a href="tienda.html">Xiaomi 12</a>
+												</li>
+												<li>
+													<a href="tienda.html">Samsung Galaxy S21</a>
+												</li>
+											</ul>
+											<ul class="sub-in text-left">
+
+												<li>
+													<a href="tienda.html">iPhone 11</a>
+												</li>
+												<li>
+													<a href="tienda.html">Samsung Galaxy S20 FE</a>
+												</li>
+												<li>
+													<a href="tienda.html">OPPO Reno 6 5G</a>
+												</li>
+											</ul>
+
+										</div>
+										<div class="col-md-4 media-list span4 text-left">
+
+											<h5 class="tittle-w3layouts-sub-nav">¿Que esperas para tener el tuyo?</h5>
+											<div class="media-mini mt-3">
+												<a href="tienda.html">
+													<img src="images/g1.jpg" class="img-fluid" alt="">
+												</a>
+											</div>
+
+										</div>
+									</div>
+									<hr>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contacto</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="detalleCompra.html">Mis Compras
+								<span class="fa fa-shopping-bag" aria-hidden="true"></span>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</nav>
+		</header>
+		<!-- //header -->
+		<!-- banner -->
+		<div class="banner_inner">
+			<div class="services-breadcrumb">
+				<div class="inner_breadcrumb">
+
+					<ul class="short">
+						<li>
+							<a href="index.html">Home</a>
+							<i>|</i>
+						</li>
+						<li>Productos</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!--Agregar Producto-->
+	<section class="banner-bottom-wthreelayouts py-lg-5 py-3">
+		<div class="container">
+			<div class="inner-sec-shop px-lg-4 px-3">
+				<a class="btn btn-outline-warning" data-toggle="modal" data-target=".bd-example-modal-lg" role="button">
+					Agregar Producto
+					<span class="fa fa fa-list" aria-hidden="true"></span>
+				</a>
+				<hr>
+				<!-- Modal -->
+				<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+					aria-labelledby="myLargeModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="container">
+									<div class="inner-sec-shop px-lg-4 px-3">
+										<form id="formAgregar" enctype="multipart/form-data" onclick="agregarProducto()"  onsubmit="get_datos_form(event)">
+											<h2 class="h2Registrar">Agregar Producto
+											</h2>
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<label for="nombre">Nombre</label>
+													<input type="text" class="form-control" id="nombreCel"
+														name="nombreCel" required>
+												</div>
+												<div class="form-group col-md-4">
+													<label for="precioCel">Precio</label>
+													<input type="number" class="form-control"
+														id="precioCel" name="precioCel" required>
+												</div>
+												<div class="form-group col-md-2">
+													<label for="stock">Stock</label>
+													<input type="number" class="form-control" id="stockCel"
+														name="stockCel" placeholder="Stock"
+														required>
+												</div>
+											</div>
+											<div class="form-floating">
+												<textarea class="form-control"
+													placeholder="Descripcion del Producto"
+													id="descripcion" name="descripcionCel"
+													style="height: 100px" required></textarea>
+												<label for="descripcion">Descripcion</label>
+											</div>
+
+											<br>
+											<div class="form-group col-md-12">
+												<label for="file">Imagen</label>
+												<input type="file" class="form-control" name="imagen" id="imagen"
+													required>
+											</div>
+											<div class="centrarbtn">
+												<button type="submit" class="btnAgregar">Agregar</button>
+											</div>
+											<br>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-outline-dark"
+								data-dismiss="modal">Salir</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tabla">
+					<table class="timetable_sub table-hover" id="tablaAgregar">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Nombre</th>
+								<th>Descripcion</th>
+								<th>Imagen</th>
+								<th>Precio</th>
+								<th>Stock</th>
+								<th>Acciones</th>
+							</tr>
+						</thead>
+						<tbody id="tbody">
+							<tr>
+								<!-- Modal -->
+								<div class="modal fade editarProducto" tabindex="-1" role="dialog" 
+									aria-labelledby="myLargeModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-lg modal-dialog modal-dialog-centered">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"
+													aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<div class="container">
+													<div class="inner-sec-shop px-lg-4 px-3">
+														<form id="formActualizar" enctype="multipart/form-data" onsubmit="get_datos_form(event)">
+															<h2 class="h2Registrar">Editar Producto
+															</h2>
+															<div class="form-row">
+																<div class="form-group col-md-6">
+																	<label for="nombre">Nombre</label>
+																	<input type="text" class="form-control" id="nombre"
+																		name="nombreCel" required>
+																</div>
+																<div class="form-group col-md-4">
+																	<label for="precioCel">Precio</label>
+																	<input type="number" class="form-control"
+																		id="precio" name="precioCel" required>
+																</div>
+																<div class="form-group col-md-2">
+																	<label for="stock">Stock</label>
+																	<input type="number" class="form-control" id="stock"
+																		name="stockCel" placeholder="Stock"
+																		required>
+																</div>
+															</div>
+															<div class="form-floating">
+																<textarea class="form-control"
+																	placeholder="Descripcion del Producto"
+																	id="descripcionCel" name="descripcion"
+																	style="height: 100px" required></textarea>
+																<label for="descripcion">Descripcion</label>
+															</div>
+
+															<br>
+
+															<div class="form-group col-md-12">
+																<label for="file">Subir Imagen</label>
+																<input type="file" class="form-control" id="imagen"
+																	name="imagen" required>
+															</div>
+
+															<div class="centrarbtn">
+																<button type="submit"
+																	class="btnAgregar">Actualizar</button>
+															</div>
+															<br>
+														</form>
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button"  class="btn btn-outline-dark"
+													data-dismiss="modal">Salir</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--//checkout-->
+	<!--footer -->
+	<footer class="py-lg-5 py-3">
+		<div class="container-fluid px-lg-5 px-3">
+			<div class="row footer-top-w3layouts">
+				<div class="col-lg-3 footer-grid-w3ls">
+					<div class="footer-title">
+						<h3>Acerca de nosotros</h3>
+					</div>
+					<div class="footer-text">
+						<p>Somos una empresa altamente innovadora con los precios más competitivos del mercado que
+							ofrecemos celulares de alta gama con la nueva tecnología del momento.</p>
+						<ul class="footer-social text-left mt-lg-4 mt-3">
+
+							<li class="mx-2">
+								<a href="#">
+									<span class="fab fa-facebook-f"></span>
+								</a>
+							</li>
+							<li class="mx-2">
+								<a href="#">
+									<span class="fab fa-twitter"></span>
+								</a>
+							</li>
+							<li class="mx-2">
+								<a href="#">
+									<span class="fab fa-google-plus-g"></span>
+								</a>
+							</li>
+							<li class="mx-2">
+								<a href="#">
+									<span class="fab fa-linkedin-in"></span>
+								</a>
+							</li>
+							<li class="mx-2">
+								<a href="#">
+									<span class="fas fa-rss"></span>
+								</a>
+							</li>
+							<li class="mx-2">
+								<a href="#">
+									<span class="fab fa-vk"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 footer-grid-w3ls">
+					<div class="footer-title">
+						<h3>Ponte en contacto</h3>
+					</div>
+					<div class="contact-info">
+						<h4>Ubicación</h4>
+						<p>#63-882 a 63, Av. 30 de Agosto #2166, Pereira, Risaralda.</p>
+						<div class="phone">
+							<h4>Contacto :</h4>
+							<p>Celular : +57 3180000000</p>
+							<p>Email :
+								<a href="mailto:info@example.com">DigitalSolutions@example.com</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 footer-grid-w3ls">
+					<div class="footer-title">
+						<h3>Enlaces</h3>
+					</div>
+					<ul class="links">
+						<li>
+							<a href="indexAdmi.html">Inicio</a>
+						</li>
+						<li>
+
+
+
+							<a href="nosotros.html">Nosotros</a>
+
+						</li>
+
+						<li>
+							<a href="tienda.html">Tienda</a>
+						</li>
+						<li>
+							<a href="contact.html">Contacto</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-3 footer-grid-w3ls">
+					<div class="footer-title">
+						<h3>Inscríbete a ofertas</h3>
+					</div>
+					<div class="footer-text">
+						<p>Al suscribirse a nuestra lista de correo, siempre recibirá nuestras últimas noticias y
+							actualizaciones.</p>
+						<form action="#" method="post">
+							<input class="form-control" type="email" name="Email"
+								placeholder="Introduzca su correo electrónico..." required="">
+							<button class="btn1">
+								<i class="far fa-envelope" aria-hidden="true"></i>
+							</button>
+							<div class="clearfix"> </div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="copyright-w3layouts mt-4">
+				<p class="copy-right text-center ">&copy; 2018 Goggles. All Rights Reserved | Design by
+					<a href="http://w3layouts.com/"> W3layouts </a>
+				</p>
+			</div>
+		</div>
+	</footer>
+
+
+    <!-- formulario Producto -->
+	<script src="js/formProducto.js"></script>
+	
+	<!--jQuery-->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	
+	<!-- newsletter modal -->
+	<!--search jQuery-->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/classie-search.js"></script>
+	<script src="js/demo1-search.js"></script>
+	<!--//search jQuery-->
+	
+	<script>
+		$(document).ready(function () {
+			$(".button-log a").click(function () {
+				$(".overlay-login").fadeToggle(200);
+				$(this).toggleClass('btn-open').toggleClass('btn-close');
+			});
+		});
+		$('.overlay-close1').on('click', function () {
+			$(".overlay-login").fadeToggle(200);
+			$(".button-log a").toggleClass('btn-open').toggleClass('btn-close');
+			open = false;
+		});
+	</script>
+	<!-- carousel -->
+	<!-- easy-responsive-tabs -->
+	<script src="js/easy-responsive-tabs.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#horizontalTab').easyResponsiveTabs({
+				type: 'default', //Types: default, vertical, accordion           
+				width: 'auto', //auto or any width like 600px
+				fit: true, // 100% fit in a container
+				closed: 'accordion', // Start closed if in accordion view
+				activate: function (event) { // Callback function if tab is switched
+					var $tab = $(this);
+					var $info = $('#tabInfo');
+					var $name = $('span', $info);
+					$name.text($tab.text());
+					$info.show();
+				}
+			});
+			$('#verticalTab').easyResponsiveTabs({
+				type: 'vertical',
+				width: 'auto',
+				fit: true
+			});
+		});
+	</script>
+	<!--quantity-->
+	<script>
+		$('.value-plus').on('click', function () {
+			var divUpd = $(this).parent().find('.value'),
+				newVal = parseInt(divUpd.text(), 10) + 1;
+			divUpd.text(newVal);
+		});
+
+		$('.value-minus').on('click', function () {
+			var divUpd = $(this).parent().find('.value'),
+				newVal = parseInt(divUpd.text(), 10) - 1;
+			if (newVal >= 1) divUpd.text(newVal);
+		});
+	</script>
+	<!--quantity-->
+	<!--close-->
+	<script>
+		$(document).ready(function (c) {
+			$('.close1').on('click', function (c) {
+				$('.rem1').fadeOut('slow', function (c) {
+					$('.rem1').remove();
+				});
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function (c) {
+			$('.close2').on('click', function (c) {
+				$('.rem2').fadeOut('slow', function (c) {
+					$('.rem2').remove();
+				});
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function (c) {
+			$('.close3').on('click', function (c) {
+				$('.rem3').fadeOut('slow', function (c) {
+					$('.rem3').remove();
+				});
+			});
+		});
+	</script>
+	<!--//close-->
+
+	<!-- dropdown nav -->
+	<script>
+		$(document).ready(function () {
+			$(".dropdown").hover(
+				function () {
+					$('.dropdown-menu', this).stop(true, true).slideDown("fast");
+					$(this).toggleClass('open');
+				},
+				function () {
+					$('.dropdown-menu', this).stop(true, true).slideUp("fast");
+					$(this).toggleClass('open');
+				}
+			);
+		});
+	</script>
+	<!-- //dropdown nav -->
+	<script src="js/move-top.js"></script>
+	<script src="js/easing.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 900);
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			/*
+									var defaults = {
+										  containerID: 'toTop', // fading element id
+										containerHoverID: 'toTopHover', // fading element hover id
+										scrollSpeed: 1200,
+										easingType: 'linear' 
+									 };
+									*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!--// end-smoth-scrolling -->
+
+
+	<script src="js/bootstrap.js"></script>
+	<!-- js file -->
+</body>
+
+</html>

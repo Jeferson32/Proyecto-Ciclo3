@@ -1,0 +1,81 @@
+.custom-form-control {
+    position: relative;
+    background: #00000000;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+    margin-block-start: 20px;/*Campo Arriba*/
+    margin-block-end: 35px; /*Campo Abajo*/
+  }
+  
+  
+  /* Styles for the inputs of the form */
+  .form__input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    height: 3rem;
+    /*outline: 2px solid #ccc;*/
+    outline: none;
+    border-radius: 0.1rem;
+    border: 1px solid #ffffff;
+  }
+  
+  /* Custom placeholder styling being */
+  .input__placeholder {
+    position: absolute;
+    top: 1.3rem;
+    left: 3.6rem;
+    font-size: 1rem;
+    background: #00000000;
+    color: rgb(255, 255, 255);/*CAMBIAR COLOR TEXTO CORREO ELECTRONICO*/
+    transition: top 0.1s ease, font-size 0.1s ease, left 0.1s ease,padding 0.1s ease;
+  }
+
+  
+  .form__input:focus ~ .input__placeholder,
+  .form__input:not(:placeholder-shown) ~ .input__placeholder {
+    padding: 0.1rem 0.5rem;
+    font-size: 0.9rem;
+    left: 0.5rem;
+    top: -0.5rem;
+    color: rgb(255, 255, 255);/*CAMBIAR COLOR TEXTO CORREO ELECTRONICO*/
+  }
+
+  .input__placeholder2 {
+    position: absolute;
+    top: 1.3rem;
+    left: 3.6rem;
+    font-size: 1rem;
+    background: #00000000;
+    color: rgb(255, 255, 255);/*CAMBIAR COLOR TEXTO CORREO ELECTRONICO*/
+    transition: top 0.1s ease, font-size 0.1s ease, left 0.1s ease,padding 0.1s ease;
+
+  }
+
+  .form__input:focus ~ .input__placeholder2,
+  .form__input:not(:placeholder-shown) ~ .input__placeholder2 {
+    padding: 0.1rem 0.5rem;
+    font-size: 0.9rem;
+    left: 0.5rem;
+    top: -0.5rem;
+    color: rgb(255, 255, 255);/*CAMBIAR COLOR TEXTO CORREO ELECTRONICO*/
+  }
+
+  /* Custom placeholder styling being */
+  .form__item:focus {
+    outline-color: var(--bs-secondary);
+    box-shadow: 0 0 5px 0 var(--bs-secondary); 
+  }
+  
+
+  /* Icons inside the form control component */
+  .custom-form-control .fas {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    visibility: hidden;
+
+  }
+  

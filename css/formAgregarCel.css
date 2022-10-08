@@ -1,0 +1,19 @@
+.h2Registrar{
+    color: #fff;
+    background-color: #ff4d00;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btnAgregar{
+    border-color: #ff4d00;
+    color: #fff;
+    background-color: #ff4d00;
+    text-transform: uppercase;
+}
+.centrarbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

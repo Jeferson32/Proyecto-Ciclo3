@@ -1,0 +1,75 @@
+
+  .content-select{
+	
+	position: relative;
+    width: 100%;
+}
+ 
+.content-select select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	font-family: 
+	'Quicksand', sans-serif;
+	border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+ 
+.content-select select:hover{
+
+	background: #000000;
+    color: rgb(255, 255, 255);
+    font-weight: bolder; 
+}
+ 
+/* 
+Creamos la fecha que aparece a la izquierda del select.
+Realmente este elemento es un cuadrado que sólo tienen
+dos bordes con color y que giramos con transform: rotate(-45deg);
+*/
+.content-select i{
+
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 13px);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:4px solid #2AC176;
+	border-bottom:4px solid #2AC176;
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+	transition: all 0.25s ease;
+}
+ 
+.content-select:hover i{
+
+	margin-top: 3px;
+}
+
+.formulario_boton{
+
+	grid-column: span 2;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+    height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background-color: #000;
+	color : #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}

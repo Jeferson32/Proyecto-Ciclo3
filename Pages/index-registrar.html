@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login Form Design </title>
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="icon" type="image/x-icon" href="Img/favicon.ico" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>      
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-auth.js"></script>
+
+    <!-- CSS-Placeholder -->
+    <link rel="stylesheet" href="../css/Placeholder.css" />
+
+    <!-- Importacion Iconos -->
+     <script src="https://kit.fontawesome.com/23f34b90e1.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    
+
+    <div class="login-box">   
+
+    
+      <br/><br>
+      <label for="Titulo1" class="formulario_label0">Registro Usuario</label>
+      <form id="form-auth">
+        
+
+        <div class="Caja_botones">
+
+          <!--
+          <div class="custom-form-control">
+            <input type="text" name="Email" id="email" placeholder=" " class="form__input form__item"/>
+            <label for="email" class="input__placeholder">Correo Electrónico</label>
+          </div>
+          -->
+
+          <!-- PASSWORD INPUT 
+          <div class="custom-form-control">
+            <input type="password" name="password" id="password" placeholder=" " class="form__input form__item"/>
+            <label for="email" class="input__placeholder2">Contraseña</label>
+          </div>
+          
+          -->
+          <!--Registrar
+          <button type="submit" class="loguear_correo"><i class="fa-solid fa-id-card"></i> Registrar Usuario</button>
+           -->
+
+          <br/><br>
+          <!--Registrar Usuario-->
+          <button type="button" class="loguear_correo" id="crearUser" onclick="window.location.href='../Pages/Registrar-Users-Tienda.html';"> <i class="fa-solid fa-file-pen"></i> Registrar en Tienda</button>
+          
+          <!--Login Google-->
+          <button type="button" class="loguear_google" id="googleLogin"><i class="fa-brands fa-google"></i> Registrar con Google</button>
+          <!--Login Facebook-->
+          <button type="button" class="loguear_facebook" id="facebookLogin"><i class="fa-brands fa-facebook"></i> Registrar con Facebook</button>
+          <!--Volver-->
+          <button type="button" class="loguear_correo" id="googleLogin" onclick="window.location.href='../index.html';"> <i class="fa-solid fa-arrow-left"></i> Volver</button>
+
+
+        </div>
+        
+      </form>
+
+    </div>   
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+     <script type="module">
+      var firebaseConfig = {
+        apiKey: "AIzaSyC94F8Q6S_kdFbbRCAN1m6ZDpGGbzUZAZE",
+        authDomain: "proyecto1prueba-60473.firebaseapp.com",
+        projectId: "proyecto1prueba-60473",
+        storageBucket: "proyecto1prueba-60473.appspot.com",
+        messagingSenderId: "450953949603",
+        appId: "1:450953949603:web:3e2a452caec80b9bbeea16",
+        measurementId: "G-VQNTLMY21L"
+      };
+    
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      const auth = firebase.auth();
+      //firebase.auth().signInWithRedirect(provider);
+      
+    </script>
+
+    <script type="text/javascript" src="./Js/index.js"></script>
+
+  </body>
+</html>
